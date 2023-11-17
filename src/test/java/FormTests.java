@@ -13,11 +13,11 @@ public class FormTests {
         Configuration.browserSize = "1920x1080";
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.pageLoadStrategy = "eager";
-        Configuration.holdBrowserOpen = true;
+        //Configuration.holdBrowserOpen = true;
     }
 
     @Test
-    void FormTest() {
+    void formtest() {
         open("/automation-practice-form");
         $(".practice-form-wrapper").shouldHave(text("Student Registration Form"));
         executeJavaScript("$('#fixedban').remove()");
@@ -55,4 +55,5 @@ public class FormTests {
         $(".table-responsive").shouldHave(text("NCR Noida"));
 
 
-    }}
+    }
+}
