@@ -17,7 +17,7 @@ public class FormTests {
     }
 
     @Test
-    void formtest() {
+    void formTest() {
         open("/automation-practice-form");
         $(".practice-form-wrapper").shouldHave(text("Student Registration Form"));
         executeJavaScript("$('#fixedban').remove()");
